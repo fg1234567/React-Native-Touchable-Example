@@ -1,3 +1,7 @@
+//This program counts the total number of clicks on the buttons and 
+//the difference between the number of clicks on 'increase' and 'decrease' buttons.
+//Styles and allignments of touchables should be worked on.
+
 import React, { Component } from 'react'
 import {
   AppRegistry,
