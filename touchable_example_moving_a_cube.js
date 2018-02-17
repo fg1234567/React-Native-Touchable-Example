@@ -1,3 +1,7 @@
+//This program moves a box in up-down and left-right directions and bounds the box inside the screen
+//according to the clicks on four different touchables.
+//Styles and allignments of touchables should be improved.
+
 import React, { Component } from 'react'
 import {
   AppRegistry,
