@@ -12,9 +12,8 @@ class App extends Component {
     super(props)
     this.state = { count: 0,
                    plus:  0,
-                   minus: 0,
-                   leftPosition: 10,
-                   topPosition:  50 }
+                   minus: 0
+                              }
   }
 
   onPressIncrease = () => {
@@ -31,33 +30,8 @@ class App extends Component {
     })
   }
 
-  onPressDescend = () => {
-    this.setState({
-      topPosition: this.state.topPosition+10
-    })
-  }
-
-
  render() {
    return (
-   <View>
-
-         <View style={styles.container}>
-
-         <TouchableOpacity
-           style={styles.button}
-           onPress={this.onPressDescend}
-         >
-           <Text> Move the Cube </Text>
-         </TouchableOpacity>
-
-           <View style={{flex: 1, flexDirection: 'row'}}>
-              <View style={{top: this.state.topPosition, width: 50, height: 50, backgroundColor: 'powderblue'}} />
-              <View style={{top: this.state.topPosition, width: 50, height: 50, backgroundColor: 'skyblue'}} />
-              <View style={{top: this.state.topPosition, width: 50, height: 50, backgroundColor: 'steelblue'}} />
-            </View>
-         </View>
-
 
      <View style={styles.container}>
 
@@ -85,7 +59,6 @@ class App extends Component {
 
         </View>
       </View>
-    </View>
     )
   }
 }
@@ -107,9 +80,6 @@ const styles = StyleSheet.create({
   },
   countText: {
     color: '#FF00FF'
-  },
-  squares: {
-    flexDirection: 'row'
   }
 })
 
